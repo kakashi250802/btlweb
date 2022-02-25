@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/font/boxicons-2.1.1/css/boxicons.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
 </head>
 <body>
     <div class="app" >
@@ -82,22 +83,39 @@
                     </div>   
                 </div>  
              </div>   
-            <div class="l-4">
+            <div class="l-4 form">
                 <form action="#" method="post">
-                    <h3> Đăng nhập </h3> 
-                    <p> Đăng nhập để có thêm trải nghiệm </p>
-                    <input id="email" type="email" placeholder=" Địa chỉ email ">
-                    <i class='bx bxs-message-alt-minus'></i>
-                    <input id="password" type="password" placeholder=" Mật khẩu ">
-                    <i class='bx bx-lock-alt' ></i>
-                    <button type="submit" class="btn-submit"> Đăng nhập </button>
-                    <p> Đặt lại mật khẩu của bạn? <a href="#"> Bấm vào đây </a> </p> 
-                    <p> Không có tài khoản? <a href="#"> Đăng ký </a> </p> 
-                    <p> HOẶC </p>
-                    <P> Tiếp tục với Facebook </P>
-                    <i class='bx bxl-facebook-square' ></i>
-                    <p> Tiếp tục với Google </p>
-                    <i class='bx bxl-google' ></i>
+                    <div class="form-title">
+                        <h3> Đăng nhập </h3> 
+                        <p class="info"> Đăng nhập để có thêm trải nghiệm </p>
+                    </div>
+                    <div class="form-fill">
+                        <input id="email" type="email" required placeholder="Địa chỉ email ">
+                        <i class='bx bxl-gmail'></i>
+                    </div>
+                    <div class="form-fill">
+                        <input id="password" type="password" required placeholder="Mật khẩu ">
+                        <i class='bx bx-lock-alt' ></i>
+                    </div>
+                    <div class="center">
+                        <button type="submit" class="btn-submit btn-primary"> Đăng nhập </button>
+                        <div class="other-fill">
+                            <p> Đặt lại mật khẩu của bạn? <a href="#" class="txt-primary"> Bấm vào đây </a> </p> 
+                        </div>
+                        <div class="other-fill">
+                            <p> Không có tài khoản? <a href="#" class="txt-primary"> Đăng ký </a> </p> 
+                        </div>
+                        <p> HOẶC </p>
+                        <a class="other-fill btn" href="#">
+                            <P> Tiếp tục với Facebook </P>
+                            <i class='bx bxl-facebook-square' ></i>
+                        </a>
+                        <a class="other-fill btn" href="#">
+                            <p> Tiếp tục với Google </p>
+                            <i class='bx bxl-google' ></i>
+                        </a>
+                    </div>
+
                 </form>
             </div>
             </div>

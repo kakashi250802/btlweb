@@ -1,33 +1,3 @@
-
-:root{
-    --primary-cl:#f68a39;
-}
-* {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-h3 {
-    display: block;
-    font-size: 19px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-p {
-    font-size: 18px;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-img {
-    height: 60px;
-    width: auto;
-    margin: 10px 13px 10px 45px;
-}
 .layout{
     max-width: 100%;
     display: block;
@@ -76,7 +46,7 @@ img {
     color: #fff;
     width: 100%;
     height: 170px;
-    text-align: center;
+    text-align:left;
 }
 .menu a span{
     line-height: 1.6;
@@ -113,15 +83,67 @@ img {
     float: left;
 }
 
-div {
-    display: block;
+.form {
+    position: relative;
+}
+.form form{
+    position: absolute;
+    background-color: #fff;
+    box-shadow: -2px 19px 20px 2px #eee9e9;
+    padding: 20px 52px;
+    top:-10%;
+    left: 100%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+}
+.form-title h3{
+    font-size: 28px;
+}
+.form-title{
+    padding: 4px 0 20px;
+    color: var(--dark-cl);
 }
 
-* {
-    box-sizing: border-box;
+.form-fill {
+    /* display: flex; */
+    /* padding: 10px 20px; */
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.form-fill i {
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+.form-fill input {
+    width: 400px;
+    padding: 16px 8px;
+    outline: 0;
+    border-radius: 12px;
+    border: 1px solid #cccc;
+    transition: all 0.3s ease-in-out;
+}
+.form-fill input:focus-visible{
+    border-color: var(--primary-cl);
 }
 
+.form-title .info{
+    font-weight: 700;
+    font-size: 16px;
+}
+.form .btn-submit {
+    width: 400px;
+    padding: 16px 0;
+    margin: 14px 0;
+}
 
+.other-fill i{
+    position: absolute;
+    right: 4%;
+    font-size: 24px;
 
-
+}
 
